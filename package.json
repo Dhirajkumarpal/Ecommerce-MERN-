@@ -1,0 +1,31 @@
+{
+  "name": "ecommerce-mern-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/Server.js",
+    "server":"nodemon backend/Server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhirajkumarpal/Ecommerce-MERN-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dhirajkumarpal/Ecommerce-MERN-/issues"
+  },
+  "homepage": "https://github.com/Dhirajkumarpal/Ecommerce-MERN-#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.2",
+    "nodemon": "^2.0.7"
+  }
+}
