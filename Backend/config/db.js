@@ -1,8 +1,8 @@
-require('mongoose').config()
+//require('dotenv').config()
 const mongoose=require("mongoose")
 const connectDB=async()=>{
     try{
-       await mongoose.connect(process.env.Mongo_URI,{
+        await mongoose.connect('mongodb://127.0.0.1/Ecommerce_site',{
             useNewUrlParser:true,
             useUnifiedTopology:true
        });
@@ -12,5 +12,5 @@ const connectDB=async()=>{
         process.exit(1)
     }
 }
-module.export=connectDB
+module.exports=connectDB
 
