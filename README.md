@@ -1,4 +1,6 @@
 # Ecommerce-MERN-
+Front-end: React js,HTML,css,Fontawesome,Redux,Hooks
+Backend:Node js,Mongo DB,Express.
 
 HomePage:This page provides the list of products available.
 
